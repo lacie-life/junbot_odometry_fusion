@@ -10,7 +10,7 @@
 #include "ArUcOOdometry.h"
 
 ArUcOOdometry* g_slam;
-void ImageCallback(const sensor_msgs::ImageConstPtr& img_ptr );
+void ImageCallback(const sensor_msgs::ImageConstPtr& img_ptr);
 void EncoderCallback(const geometry_msgs::QuaternionStamped::ConstPtr& en_ptr);
 
 ros::Publisher g_landmark_pub;
@@ -81,7 +81,7 @@ int main(int argc, char **argv)
     return 0;
 }
 
-void ImageCallback ( const sensor_msgs::ImageConstPtr& img_ptr )
+void ImageCallback(const sensor_msgs::ImageConstPtr& img_ptr)
 {
     cv_bridge::CvImageConstPtr cv_ptr  = cv_bridge::toCvShare ( img_ptr );
 
@@ -95,7 +95,7 @@ void ImageCallback ( const sensor_msgs::ImageConstPtr& img_ptr )
 }
 
 
-void EncoderCallback ( const geometry_msgs::QuaternionStamped::ConstPtr& en_ptr )
+void EncoderCallback(const geometry_msgs::QuaternionStamped::ConstPtr& en_ptr)
 {
     double enl1 = en_ptr->quaternion.x;
     double enl2 = en_ptr->quaternion.y;
