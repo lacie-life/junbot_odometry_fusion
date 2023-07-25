@@ -8,10 +8,12 @@ find_package(catkin REQUIRED COMPONENTS
         std_msgs
         nav_msgs
         geometry_msgs
+        image_transport
+        cv_bridge
         tf
         )
 
-find_package(OpenCV 4 REQUIRED)
+find_package(OpenCV 4.5 REQUIRED)
 find_package(Eigen3 3.1.0 REQUIRED NO_MODULE)
 find_package(yaml-cpp REQUIRED)
 
@@ -19,7 +21,7 @@ find_package(yaml-cpp REQUIRED)
 catkin_package(
         INCLUDE_DIRS include
         LIBRARIES junbot_relocalization
-        CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs nav_msgs tf
+        CATKIN_DEPENDS roscpp rospy std_msgs geometry_msgs nav_msgs tf image_transport cv_bridge
 #       DEPENDS system_lib
 )
 
