@@ -1,7 +1,7 @@
 <launch>
 
 	<node pkg="junbot_odommetry_fusion" type="junbot_odom_node" name="junbot_odom_node" output="screen">
-      <rosparam file="$(find junbot_odometry_fusion)/data/markerConfig.yaml" command="load" />
-    </node>
+      <rosparam file="$(find junbot_odometry_fusion)/param/markerConfig.yaml" command="load" />
+  </node>
 
 </launch>
