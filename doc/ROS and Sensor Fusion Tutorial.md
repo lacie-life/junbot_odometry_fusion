@@ -5,6 +5,8 @@ A tutorial for sensor fusion using the robot_localization package! (With explana
 
 https://www.youtube.com/watch?v=nfvvpYBAMww&t=198s
 
+[Github](https://github.com/methylDragon/ros-sensor-fusion-tutorial/tree/master)
+
 ---
 
 ## Pre-Requisites
